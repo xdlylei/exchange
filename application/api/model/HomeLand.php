@@ -12,4 +12,10 @@ namespace app\api\model;
 class HomeLand extends  BaseModel
 {
 
+
+
+
+
+
+
 }

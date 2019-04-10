@@ -5,7 +5,8 @@ class Index
 {
     public function index()
     {
-        return 'hello dache';
+       # return 'hello dache';
+          echo  'hello dache';
     }
 
     public function hello($name = 'ThinkPHP5')
