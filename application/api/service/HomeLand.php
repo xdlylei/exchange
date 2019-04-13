@@ -8,6 +8,10 @@
 
 namespace app\api\service;
 
+use think\Exception;
+use   think\facade\Request;
+use    app\api\model\HomeLand as HomeLandModel;
+
 
 class HomeLand  extends  BaseService
 {
@@ -45,9 +49,66 @@ class HomeLand  extends  BaseService
 
 
    //    //2.把老家的信息存入数据库中，save
-    //
-    //
-    //
+
+    public   function  setHomeLand(){
+
+        //
+        $vars=Request::param();
+        $homeLand=new HomeLandModel();
+        $create_res='';
+
+        $address=self::divideAddress($vars);
+
+        try{
+        $homeLand['province']= $address['province'];
+        $homeLand['up_city'] = $address['up_city'];
+        $homeLand['city']    = $address['city'];
+        $homeLand['town']    = $address['town'];
+        $homeLand['village'] = $address['village'];
+
+         //设置地址代码
+            $homeLand['province_id']  ='44';
+            $homeLand['up_city_id']  ='18';
+            $homeLand['city_id']='82';
+            $homeLand['town_id']='51';
+            $homeLand['village_id']="345";
+
+        $create_res=$homeLand->save();
+
+
+        }catch(Exception $e){
+
+
+        }
+       if($create_res>0) {
+           return "ok";
+       }else{
+           return "create_fail";
+       }
+
+
+    }
+
+
+    //拆分地址
+    public  function  divideAddress($str){
+
+
+
+        $address='';
+        $address['province']='广东省';
+        $address['up_city']='清远市';
+        $address['city']='连州市';
+        $address['town']='瑶安乡';
+        $address['village']='大营村';
+
+        return $address;
+
+    }
+
+
+
+
     //    //3 根据地级市编码获得信息
     //
     //

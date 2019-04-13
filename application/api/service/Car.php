@@ -15,4 +15,9 @@ class Car  extends  BaseService
 
 
 
+
+
+    //注册成为车主
+
+
 }
