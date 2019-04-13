@@ -30,7 +30,9 @@ class User extends  BaseModel
 
 
 
-
+     public static function  getUserId(){
+        return self::get('user_id');
+     }
 
 
 

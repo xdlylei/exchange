@@ -14,4 +14,6 @@ use app\api\controller\BaseController;
 class LocOnWay  extends  BaseController
 {
 
+
+
 }

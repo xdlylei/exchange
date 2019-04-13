@@ -12,4 +12,7 @@ namespace app\api\service;
 class LocOnWay   extends  BaseService
 {
 
+    //
+
+
 }

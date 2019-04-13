@@ -14,27 +14,18 @@ use app\api\controller\BaseController;
 class HomeLand  extends  BaseController
 {
 
-    //1.获取老家信息
+    //获取老家信息接口,返回老家信息和当前城市；
+    //
+    public function  getHomeLand(){
 
 
 
-
-    //2.把老家的信息存入数据库中，save
-
+    }
 
 
-    //3 根据地级市编码获得信息
+    //获取照片地址接口
+    //修改照片地址接口
 
-
-
-    //4 根据县级市编码获得信息
-
-
-
-    //5 根据乡级编码获得信息
-
-
-    //6 根据村编码获得信息
 
 
 

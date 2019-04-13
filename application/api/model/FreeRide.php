@@ -13,6 +13,10 @@ class FreeRide extends  BaseModel
 {
   //1.创建保存载人订单
 
+
+
+
+
     //2.获取载人订单
 
 

@@ -14,4 +14,11 @@ use app\api\controller\BaseController;
 class Img extends  BaseController
 {
 
+
+    //  获取照片信息
+    public function  getImg(){
+
+
+
+    }
 }
