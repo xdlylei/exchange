@@ -1,15 +1,15 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Admin
- * Date: 2019/4/10
- * Time: 17:56
+ * User: laird
+ * Date: 2019/7/29
+ * Time: 23:38
  */
 
 namespace app\api\model;
 
 use think\Model;
-class Img extends  BaseModel
+class Order extends  BaseModel
 {
 
 }

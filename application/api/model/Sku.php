@@ -9,7 +9,7 @@
 namespace app\api\model;
 
 use think\Model;
-class Img extends  BaseModel
+class Sku extends  BaseModel
 {
 
 }
